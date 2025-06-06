@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title accesskey="v" title="Ver flores disponibles">Ver flores disponibles</title>
+    <link rel="stylesheet" href="Estilo.css" />
+</head>
+<body lang="es" contenteditable="false" spellcheck="false" translate="yes" tabindex="0" title="Página de flores disponibles" draggable="false">
+
+    <header title="Encabezado principal" contenteditable="false">
+        <hgroup>
+            <img src="https://i.pinimg.com/736x/15/d7/07/15d707e8c07003747cb7522d774062dd.jpg" 
+                 alt="Flores de colores brillantes" 
+                 style="width: 100%; max-height: 250px; object-fit: cover;" 
+                 draggable="false"
+                 accesskey="i" />
+            <h1 title="Título principal" draggable="true">Flores disponibles</h1>
+        </hgroup>
+    </header>
+
+    <main>
+    <section tabindex="1" aria-label="Galería de flores disponibles">
+    <article style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center;">
+        <figure style="width: 200px; text-align: center;">
+            <img src="https://i.pinimg.com/736x/c9/0e/ba/c90ebab7de02b49fce1f6c55e91eddbf.jpg" alt="Rosa roja" style="width: 100%; height: auto;" draggable="false" />
+            <figcaption>Rosa Roja</figcaption>
+        </figure>
+        <figure style="width: 200px; text-align: center;">
+            <img src="https://i.pinimg.com/736x/2c/f1/a9/2cf1a94bc2bbc2c0f1b627b52103d1c8.jpg" alt="Tulipán amarillo" style="width: 100%; height: auto;" draggable="false" />
+            <figcaption>Tulipán Amarillo</figcaption>
+        </figure>
+        <figure style="width: 200px; text-align: center;">
+            <img src="https://i.pinimg.com/736x/b8/a4/c6/b8a4c6f8cf71d27356545583d22de0a8.jpg" alt="Lila morado" style="width: 100%; height: auto;" draggable="false" />
+            <figcaption>Lila Morado</figcaption>
+        </figure>
+        <figure style="width: 200px; text-align: center;">
+            <img src="https://i.pinimg.com/736x/27/13/ca/2713ca720336849c24b7a7f952827818.jpg" alt="Rosa blanca" style="width: 100%; height: auto;" draggable="false" />
+            <figcaption>Rosa Blanca</figcaption>
+        </figure>
+        <figure style="width: 200px; text-align: center;">
+            <img src="https://i.pinimg.com/736x/c8/e7/9d/c8e79df4ee3c142851f011a4fe6063bc.jpg" alt="Margarita blanca" style="width: 100%; height: auto;" draggable="false" />
+            <figcaption>Margarita Blanca</figcaption>
+        </figure>
+        <figure style="width: 200px; text-align: center;">
+            <img src="https://i.pinimg.com/736x/c3/b4/43/c3b4432f8c344ed47e2366266407a8df.jpg" alt="Orquídea púrpura" style="width: 100%; height: auto;" draggable="false" />
+            <figcaption>Orquídea Púrpura</figcaption>
+        </figure>
+        <figure style="width: 200px; text-align: center;">
+            <img src="https://i.pinimg.com/736x/52/e3/d9/52e3d9bf5130caf0d0d2679c87d68590.jpg" alt="Girasol" style="width: 100%; height: auto;" draggable="false" />
+            <figcaption>Girasol</figcaption>
+        </figure>
+        <figure style="width: 200px; text-align: center;">
+            <img src="https://i.pinimg.com/736x/96/39/d8/9639d8bf206e145be57b9705bb4f1a5a.jpg" alt="Peonía rosa" style="width: 100%; height: auto;" draggable="false" />
+            <figcaption>Peonía Rosa</figcaption>
+        </figure>
+    </article>
+</section>
+        <aside title="Información adicional" tabindex="2">
+            <p>Para más detalles sobre cada flor, contáctanos por correo o visita nuestra tienda.</p>
+        </aside>
+        <canvas id="decoracionCanvasFlores" width="400" height="100" title="Decoración floral" style="margin-top: 20px;" tabindex="3"></canvas>
+    </main>
+    <footer title="Pie de página" tabindex="4">
+        <p>&copy; 2025 Floreriatokio. Todos los derechos reservados.</p>
+    </footer>
+    <script>
+        const canvas = document.getElementById("decoracionCanvasFlores");
+        const ctx = canvas.getContext("2d");
+
+        ctx.beginPath();
+        ctx.fillStyle = "#f7c6ce";
+        ctx.arc(60, 50, 30, 0, 2 * Math.PI);
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.fillStyle = "#a15a7e";
+        ctx.arc(120, 50, 20, 0, 2 * Math.PI);
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.font = "16px Arial";
+        ctx.fillStyle = "#555";
+        ctx.fillText("Flores frescas", 160, 55);
+    </script>
+</body>
+</html>

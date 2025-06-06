@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title accesskey="q" title="¿Qué es Floreriatokio?">¿Qué es Floreriatokio?</title>
+    <link rel="stylesheet" href="Estilo.css" />
+</head>
+<body lang="es" contenteditable="false" spellcheck="false" translate="yes" tabindex="0" title="Página Qué es Floreriatokio" draggable="false">
+    <header title="Encabezado principal" contenteditable="false">
+        <hgroup>
+            <img src="https://i.pinimg.com/736x/15/d7/07/15d707e8c07003747cb7522d774062dd.jpg" 
+                 alt="Flores coloridas" 
+                 style="width: 100%; max-height: 250px; object-fit: cover;" 
+                 draggable="false"
+                 accesskey="i" />
+            <h1 title="Título principal" draggable="true">¿Qué es Floreriatokio?</h1>
+        </hgroup>
+    </header>
+
+    <main>
+        <section tabindex="1" aria-label="Información sobre Floreriatokio">
+            <article>
+                <p>
+                    Floreriatokio es una tienda especializada en flores frescas, arreglos florales personalizados y decoración floral para toda ocasión.
+                    Nuestra pasión es inspirar con belleza y naturaleza.
+                </p>
+                <p>
+                    Contamos con una amplia variedad de flores nacionales e importadas para que elijas la que mejor se adapte a tus necesidades.
+                </p>
+            </article>
+        </section>
+
+        <aside title="Contacto y horario" tabindex="2">
+            <p><strong>Contacto:</strong> info@floreriatokio.com</p>
+            <p><strong>Horario:</strong> Lunes a Sábado, 9:00 - 18:00</p>
+        </aside>
+
+        <canvas id="decoracionCanvasQueEs" width="400" height="100" title="Decoración floral" style="margin-top: 20px;" tabindex="3"></canvas>
+    </main>
+    <footer title="Pie de página" tabindex="4">
+        <p>&copy; 2025 Floreriatokio. Todos los derechos reservados.</p>
+    </footer>
+    <script>
+        const canvas = document.getElementById("decoracionCanvasQueEs");
+        const ctx = canvas.getContext("2d");
+
+        ctx.beginPath();
+        ctx.fillStyle = "#f4a1b8";
+        ctx.arc(50, 50, 25, 0, 2 * Math.PI);
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.fillStyle = "#c57baa";
+        ctx.arc(110, 50, 18, 0, 2 * Math.PI);
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.font = "16px Arial";
+        ctx.fillStyle = "#444";
+        ctx.fillText("Belleza natural", 160, 55);
+    </script>
+</body>
+</html>
